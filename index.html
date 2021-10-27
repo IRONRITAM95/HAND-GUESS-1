@@ -1,0 +1,82 @@
+ 
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h1 id="qwerty" class="btn btn-success">EMOTION TO EMOJIIIIIIII<br>
+        <span>&#128526;</span>&nbsp;&nbsp;
+        <span>&#128529;</span>&nbsp;&nbsp;
+        <span>&#128516;</span>&nbsp;&nbsp;
+        <span>&#128532;</span>&nbsp;&nbsp;
+        <span>&#128544;</span>&nbsp;&nbsp;
+        <span>&#128561;</span>
+      </h1>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you Happy?</b>
+        <br>
+        <b style="color: black">Are you Sad?</b>
+        <br>
+        <b style="color: red">Are you Angry?</b>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label class="label">WEBCAM VIEW - </label>
+        <br><br>
+        <div id="camera"></div>
+        <br><br>
+        <button class="btn btn-warning" onclick="take_snapshot()">CAPTURE EMOTION</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label class="label">PREDICTION 1</label>
+        <br><br>
+          <span id="emotion1"></span>
+          <br><br>
+            <span id="emoji1"></span>
+            <br><br><br>
+            <label class="label">PREDICTION 2</label>
+            <br><br>
+              <span id="emotion2"></span>
+              <br><br>
+                <span id="emoji2"></span>
+      
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label class="label">SNAPSHOT - </label>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-warning" onclick="check()">GUESS EMOTION</button>
+      </div>
+
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
